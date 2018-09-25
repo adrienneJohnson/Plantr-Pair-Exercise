@@ -47,7 +47,6 @@ Vegetable.belongsToMany(Plot, {through: 'garden'});
 Plot.belongsToMany(Vegetable, {through: 'garden'});
 
 //Many-to-One Relation
-Gardener.belongsTo(Vegetable, {as: 'favorite_vegetable'});
-// Vegetable.hasMany(Gardener, {as: 'favorite_vegetable'});
+Gardener.belongsTo(Vegetable, {as: 'favoriteVegetable'});
 
 module.exports = {db, Vegetable, Gardener, Plot};
